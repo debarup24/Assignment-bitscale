@@ -23,7 +23,7 @@ const Navbar = () => {
           <ToggleSwitch />
         </div>
         <div>
-          <img className="w-4 md:w-7" src={assets.login_icon} alt="" />
+          <img className="w-6 md:w-8" src={assets.login_icon} alt="" />
         </div>
       </div>
     </div>

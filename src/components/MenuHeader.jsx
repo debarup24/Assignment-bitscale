@@ -11,7 +11,7 @@ import { SheetData } from "./constant/SheetData";
 const MenuHeader = () => {
   return (
     // Main
-    <div className="p-6 flex gap-6 justify-between items-center max-xl:flex-col max-xl:items-start">
+    <div className="p-6 flex flex-col md:flex-row gap-6 justify-between items-start md:items-center">
       <div className="flex  justify-between max-sm:items-start gap-9 max-lg:flex-col max-lg:gap-6">
         {" "}
         <div className="flex items-center">
