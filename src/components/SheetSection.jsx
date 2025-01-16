@@ -1,7 +1,7 @@
 import React from "react";
-import gpt_icon from "../assets/gpt_icon.png";
-import play_circle from "../assets/play_circle.png";
-import enrich_icon from "../assets/enrich_icon.png";
+import { assets } from "../assets/assets.js";
+import { FaRegCirclePlay } from "react-icons/fa6";
+import { SheetData } from "./constant/SheetData";
 
 import {
   Table,
@@ -14,7 +14,6 @@ import {
 
 import { FiPlus } from "react-icons/fi";
 import { CiPlay1 } from "react-icons/ci";
-import { SheetData } from "./constant/SheetData";
 
 const SheetSection = () => {
   return (
@@ -30,20 +29,20 @@ const SheetSection = () => {
 "
             >
               <div className="flex items-center gap-1.5">
-                <div className="bg-black px-1.5 py-[1.5px] max-lg:text-xs text-white">
+                <div className="bg-black px-1.5 py-[1.5px] md:text-sm text-xs text-white">
                   A
                 </div>
 
-                <p className="text-[#1c1b1f] text-sm max-lg:text-xs font-medium truncate">
+                <p className="text-[#1c1b1f] md:text-sm text-xs font-medium truncate">
                   Input Column
                 </p>
               </div>
             </TableHead>
 
-            <TableHead className="w-[267px] border-r text-nowrap hover:bg-[#FEF2C7] max-lg:text-xs">
+            <TableHead className="w-[267px] border-r text-nowrap hover:bg-[#FEF2C7] md:text-sm text-xs">
               <div className="flex items-center gap-1.5 ">
-                <img src={gpt_icon} alt="GPT_Icon" />
-                <p className="text-[#1c1b1f] text-sm max-lg:text-xs font-medium">
+                <img className="w-5" src={assets.gpt_icon} alt="GPT_Icon" />
+                <p className="text-[#1c1b1f] md:text-sm text-xs font-medium">
                   Action Column
                 </p>
               </div>
@@ -51,8 +50,12 @@ const SheetSection = () => {
             <TableHead className="w-[267px] border-r text-nowrap hover:bg-[#FEF2C7]">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1.5 ">
-                  <img className="w-6" src={enrich_icon} alt="Enrich Company" />
-                  <p className="text-[#1c1b1f] text-sm font-medium max-lg:text-xs">
+                  <img
+                    className="w-6"
+                    src={assets.enrich_icon}
+                    alt="Enrich Company"
+                  />
+                  <p className="text-[#1c1b1f] md:text-sm text-xs font-medium">
                     Enrich Company
                   </p>
                 </div>
@@ -60,7 +63,7 @@ const SheetSection = () => {
               </div>
             </TableHead>
             <TableHead className="text-nowrap hover:bg-[#FEF2C7]">
-              <div className="flex items-center gap-1 text-[#1c1b1f] cursor-pointer max-lg:text-xs">
+              <div className="flex items-center gap-1 text-[#1c1b1f] cursor-pointer md:text-sm text-xs">
                 <FiPlus />
                 <p>Add Column</p>
               </div>
@@ -72,12 +75,12 @@ const SheetSection = () => {
         <TableBody>
           {SheetData.map((item, index) => (
             <TableRow>
-              <TableCell className="min-w-10 w-10 text-center border-r border-b max-lg:text-xs">
+              <TableCell className="min-w-8 w-8 text-center border-r border-b md:text-sm text-xs">
                 {item.rank}
               </TableCell>
-              <TableCell className="min-w-10 w-10 border-r border-b">
+              <TableCell className="min-w-8 w-8 border-r border-b">
                 <div className="flex justify-center">
-                  <img src={play_circle} alt="Play" className="ml-0.5" />
+                  <FaRegCirclePlay className="text-[#525CE9] size-5" />
                 </div>
               </TableCell>
               <TableCell className="max-w-[267px] w-[267px] border-r border-b truncate max-lg:text-xs">
@@ -128,6 +131,39 @@ const SheetSection = () => {
           </TableRow>
 
           {/* EXTRA */}
+          <TableRow>
+            <TableCell className="min-w-10 text-center border-r border-b"></TableCell>
+            <TableCell className="min-w-10 mx-auto border-r border-b"></TableCell>
+            <TableCell className="border-r border-b w-[267px]">
+              <div className="flex items-center gap-1 cursor-pointer max-lg:text-xs"></div>
+            </TableCell>
+            <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate"></TableCell>
+            <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate"></TableCell>
+            <TableCell className="border-b w-[267px]"></TableCell>
+          </TableRow>
+
+          <TableRow>
+            <TableCell className="min-w-10 text-center border-r border-b"></TableCell>
+            <TableCell className="min-w-10 mx-auto border-r border-b"></TableCell>
+            <TableCell className="border-r border-b w-[267px]">
+              <div className="flex items-center gap-1 cursor-pointer max-lg:text-xs"></div>
+            </TableCell>
+            <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate"></TableCell>
+            <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate"></TableCell>
+            <TableCell className="border-b w-[267px]"></TableCell>
+          </TableRow>
+
+          <TableRow>
+            <TableCell className="min-w-10 text-center border-r border-b"></TableCell>
+            <TableCell className="min-w-10 mx-auto border-r border-b"></TableCell>
+            <TableCell className="border-r border-b w-[267px]">
+              <div className="flex items-center gap-1 cursor-pointer max-lg:text-xs"></div>
+            </TableCell>
+            <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate"></TableCell>
+            <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate"></TableCell>
+            <TableCell className="border-b w-[267px]"></TableCell>
+          </TableRow>
+
           <TableRow>
             <TableCell className="min-w-10 text-center border-r border-b"></TableCell>
             <TableCell className="min-w-10 mx-auto border-r border-b"></TableCell>

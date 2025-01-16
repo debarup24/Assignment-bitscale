@@ -7,7 +7,7 @@ import { BiCoinStack } from "react-icons/bi";
 
 const Sidebar = () => {
   return (
-    <div className="hidden md:visible px-6 pt-6 pb-4 h-[calc(100vh-65px)] gap-10 md:flex md:flex-col justify-between items-center border-r border-r-[#E5E5E5] max-w-14 max-lg:hidden">
+    <div className="hidden md:visible max-md:hipx-6 pt-6 pb-4 h-[calc(100vh-65px)] gap-10 md:flex md:flex-col justify-between items-center border-r border-r-[#E5E5E5] max-w-14 max-lg:hidden">
       <div className="flex flex-col gap-6">
         <FiTable className="text-xl text-gray-800 cursor-pointer hover:text-pink-800" />
         <TbPuzzle className="text-xl text-gray-800 cursor-pointer hover:text-pink-800" />
