@@ -27,7 +27,7 @@ export const SheetData = [
     rank: 3,
     date: "Oct 12, 2024",
     time: "14:08 PM",
-    actionCol: `${(<a>"https://www.linkedIn.com/bitScale.ai/sample</a>)}`,
+    actionCol: "https://www.linkedIn.com/bitScale.ai/sample",
     enrichCompany: "Google Evaluation - Lilevancy check.csv",
     actionIcon: `${assets.link_icon}`,
     companyIcon: `${assets.google_icon}`,

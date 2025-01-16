@@ -12,12 +12,12 @@ const MenuHeader = () => {
   return (
     // Main
     <div className="p-6 flex flex-col md:flex-row gap-6 justify-between items-start md:items-center">
-      <div className="flex  justify-between max-sm:items-start gap-9 max-lg:flex-col max-lg:gap-6">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-9  max-lg:gap-6">
         {" "}
         <div className="flex items-center">
           <label
             htmlFor="inputSearch"
-            className="w-[364px] max-sm:w-[264px] bg-gray-50  rounded-md flex gap-2 items-center px-2 py-2  border border-gray-300"
+            className=" w-[324px] md:w-[364px] bg-gray-50  rounded-md flex gap-2 items-center px-2 py-2  border border-gray-300"
           >
             <IoSearchSharp className={`size-4 stroke-2`} />
             <input
@@ -28,11 +28,11 @@ const MenuHeader = () => {
             />
           </label>
         </div>{" "}
-        <div className="flex items-center gap-9 max-sm:gap-5">
+        <div className="flex items-center gap-5 md:gap-9">
           {" "}
           <div className="flex items-center gap-2 cursor-pointer">
             <LuRows3 className="text-lg max-sm:text-sm" />
-            <p className="text-xs max-sm:text-[10px] font-medium text-gray-800">
+            <p className="text-[10px] md:text-xs font-medium text-gray-800">
               1/1 Row
             </p>
           </div>{" "}

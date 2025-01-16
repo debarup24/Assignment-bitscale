@@ -23,7 +23,11 @@ const Navbar = () => {
           <ToggleSwitch />
         </div>
         <div>
-          <img className="w-6 md:w-8" src={assets.login_icon} alt="" />
+          <img
+            className="w-6 md:w-8 cursor-pointer"
+            src={assets.login_icon}
+            alt=""
+          />
         </div>
       </div>
     </div>
