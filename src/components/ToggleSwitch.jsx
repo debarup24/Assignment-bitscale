@@ -13,7 +13,7 @@ const ToggleSwitch = () => {
       label={
         <div>
           <Typography
-            className={`text-xs md:text-sm font-medium md:scale-95 sm:scale-50 ${
+            className={`text-xs md:text-sm font-medium md:scale-95  ${
               autoSave ? "text-[#0E9F6E]" : "text-gray-700"
             }`}
           >

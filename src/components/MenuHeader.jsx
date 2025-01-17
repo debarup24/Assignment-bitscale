@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { IoSearchSharp } from "react-icons/io5";
 import { LuRows3, LuColumns3 } from "react-icons/lu";
 import { PiFunnelBold } from "react-icons/pi";
@@ -6,13 +6,12 @@ import { TbArrowsUpDown } from "react-icons/tb";
 import { BsStars } from "react-icons/bs";
 import { FiShare2, FiTrash2 } from "react-icons/fi";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { SheetData } from "./constant/SheetData";
 
 const MenuHeader = () => {
   return (
     // Main
-    <div className="p-6 flex flex-col md:flex-row gap-6 justify-between items-start md:items-center">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-9  max-lg:gap-6">
+    <div className="p-6 flex flex-col md:flex-col lg:flex-col xl:flex-row gap-6 justify-between items-start md:items-start lg:items-start xl:items-center">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-start lg:items-center gap-9  max-lg:gap-6">
         {" "}
         <div className="flex items-center">
           <label
@@ -38,19 +37,19 @@ const MenuHeader = () => {
           </div>{" "}
           <div className="flex items-center gap-2 cursor-pointer">
             <LuColumns3 className="text-lg max-sm:text-sm" />
-            <p className="text-xs max-sm:text-[10px] font-medium text-gray-800">
+            <p className="md:text-xs text-[10px] font-medium text-gray-800">
               3/3 Column
             </p>
           </div>{" "}
           <div className="flex items-center gap-2 cursor-pointer">
             <PiFunnelBold className="text-lg max-sm:text-sm" />
-            <p className="text-xs max-sm:text-[10px] font-medium text-gray-800">
+            <p className="md:text-xs text-[10px] font-medium text-gray-800">
               0 Filter
             </p>
           </div>{" "}
           <div className="flex items-center gap-2 cursor-pointer">
             <TbArrowsUpDown className="text-lg max-sm:text-sm" />
-            <p className="text-xs max-sm:text-[10px] font-medium text-gray-800">
+            <p className="md:text-xs text-[10px] font-medium text-gray-800">
               Sort
             </p>
           </div>

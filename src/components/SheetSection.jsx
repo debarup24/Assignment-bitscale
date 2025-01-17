@@ -83,10 +83,10 @@ const SheetSection = () => {
                   <FaRegCirclePlay className="text-[#525CE9] size-5" />
                 </div>
               </TableCell>
-              <TableCell className="max-w-[267px] w-[267px] border-r border-b truncate max-lg:text-xs">
+              <TableCell className="max-w-[267px] w-[267px] border-r border-b truncate text-xs md:text-sm">
                 {item.date} at {item.time}{" "}
               </TableCell>
-              <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate max-lg:text-xs">
+              <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate text-xs md:text-sm">
                 <div className="flex gap-2">
                   {item.actionIcon && (
                     <img src={item.actionIcon} alt="Action Icon" />
@@ -94,7 +94,7 @@ const SheetSection = () => {
                   <p className={`truncate ${item.classes}`}>{item.actionCol}</p>
                 </div>
               </TableCell>
-              <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate max-lg:text-xs">
+              <TableCell className="border-r border-b max-w-[267px] w-[267px] truncate text-xs md:text-sm">
                 <div className="flex gap-2">
                   {item.companyIcon && (
                     <img src={item.companyIcon} alt={"Company Icon"} />

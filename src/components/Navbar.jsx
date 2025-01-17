@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-2 md:gap-8">
+      <div className="flex flex-row gap-2 md:gap-6 lg:gap-8">
         <div>
           {" "}
           <ToggleSwitch />
