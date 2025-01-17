@@ -1,4 +1,5 @@
 import { assets } from "../../assets/assets.js";
+import { BITSCALE_LINK } from "./constant.js";
 
 export const SheetData = [
   {
@@ -27,11 +28,11 @@ export const SheetData = [
     rank: 3,
     date: "Oct 12, 2024",
     time: "14:08 PM",
-    actionCol: "https://www.linkedIn.com/bitScale.ai/",
+    actionCol: `${BITSCALE_LINK}`,
     enrichCompany: "Google Evaluation - Lilevancy check.csv",
     actionIcon: `${assets.link_icon}`,
     companyIcon: `${assets.google_icon}`,
-    classes: "text-blue-800 ",
+    classes: "text-blue-800 cursor-pointer ",
   },
 
   {
